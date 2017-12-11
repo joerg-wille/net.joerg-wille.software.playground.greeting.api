@@ -1,0 +1,16 @@
+<configuration>
+    <branches>
+         <branch>
+             <!-- match any branch, which does not begin with 'feature/' -->
+             <pattern>^(?!feature\/).*</pattern>
+             <versionFormat>${version}</versionFormat>
+         </branch>
+         <branch>
+             <pattern>feature/.*</pattern>
+             <prefix>feature/</prefix>
+             <versionFormat>${version.release}-${branch}-SNAPSHOT</versionFormat>
+         </branch>
+    </branches>
+    <tags>
+    </tags>
+</configuration>

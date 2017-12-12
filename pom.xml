@@ -17,8 +17,6 @@
         </description>
 	<packaging>jar</packaging>
 
-        <version>${project.parent.version}</version>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.osgi</groupId>
